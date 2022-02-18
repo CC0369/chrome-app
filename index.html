@@ -1,72 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Momentum</title>
-        <style type="text/css">
-            body {
-                padding:0;
-                margin:0;
-                
-            h1
-            {
-                font-family:sans-serif;
-                padding:0;
-                margin:0;
-                font-size: 5em
-                text-align:center;
-                position:absolute;
-                top:50%;
-                left:50%;
-                transform:translateX(-50%) translateY(+100%);
-                color: #F8F8FF
-                
-            }
-            h2{
-                font-family:sans-serif;
-                padding:0;
-                margin:0;
-                font-size: 100em
-                text-align:center;
-                position:absolute;
-                top:50%;
-                left:50%;
-                transform:translateX(-50%) translateY(-50%);
-                color: #F8F8FF
-            }
-        </style>
-    </head>
-    <body>
-        <h2 id="clock">00:00:00</h2>
-        <form class="hidden" id="login-form">
-            <input 
-                required 
-                maxlength="15"
-                type="text" 
-                placeholder="What is your name?" 
-            />
-            <input type="submit" value="Log In" />
-        </form>
-        <h1 class="hidden" id="greeting"></h1>
-        <form id="todo-form">
-            <input type="text" placeholder="Write a To Do and Press Enter" required />
-        </form>
-        <ul id="todo-list"></ul>
-        <div id="quote">
-            <span></span>
-            <span></span>
-        </div>
-        <div id="weather">
-            <span></span>
-            <span></span>
-        </div>
-        <script src="js/greetings.js"></script>
-        <script src="js/clock.js"></script>
-        <script src="js/quotes.js"></script>
-        <script src="js/background.js"></script>
-        <script src="js/todo.js"></script>
-        <script src="js/weather.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
+    <style>
+        h2 {
+            text-shadow: 3px 2px rgba(201, 225, 228, 0.466);
+        }
+    </style>
+  </head>
+  <body>
+    <h2 id="clock" style = "position:relative; left:80px; top:2px; color:white; font-size:60px; font-family: 'Franklin Gothic Medium';">00:00:00</h2>
+    <form id="login-form" style="color:aliceblue; font-family:'Franklin Gothic Medium'; font-size:35px;"> Hello, what is your name?
+        <p></p>
+      <input
+        required
+        maxlength="15"
+        type="text"
+        style="color:aliceblue; font-size:28px; font-family:'Franklin Gothic Medium'; background: rgba(201, 225, 228, 0); border: none; border-bottom: 1.5px solid white; outline:none;"
+      />
+      <input type="submit" class="hidden" value="Log In" />
+    </form>
+    <h1 class="hidden" id="greeting" style="color:aliceblue; font-family:'Franklin Gothic Medium'; font-size:35px;"></h1>
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press Enter" required />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
 </html>

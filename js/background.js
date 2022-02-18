@@ -1,9 +1,10 @@
-const images = ["0.jpeg", "1.jpeg", "2.jpeg"];
+const colors = [
+    "#525FA1",
+    "#313961",
+    "#BAC1E6",
+    "#C3C1E6"
+];
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
-
-const bgImage = document.createElement("img");
-
-bgImage.src = `img/${chosenImage}`;
-
-document.body.appendChild(bgImage);
+const bgcolor = colors[Math.floor(Math.random() * colors.length)];
+      
+document.body.style.backgroundColor = bgcolor;

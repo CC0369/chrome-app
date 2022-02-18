@@ -2,9 +2,11 @@
     display: none;
 }
 
-.bgImage {
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+input[type=text] {
+    transition: width 0.4s ease-in-out;
+    text-align:center;
+}
+
+input [type=text]:focus {
+    width:100%;
+}
