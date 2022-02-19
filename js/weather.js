@@ -15,7 +15,7 @@ function onGeoOk(position) {
     });
 }
 function onGeoError() {
-  null;
+  weather.innerText = `No location detected.`;
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);

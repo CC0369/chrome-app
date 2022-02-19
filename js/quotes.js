@@ -1,43 +1,43 @@
 const quotes = [
     {
-        quote: 'I never dreamed about success, I worked for it.',
-        author: 'Estee Lauder'
+        quote: 'I never dreamed of success, I worked for it.',
+        author: '- Estee Lauder -'
     },
     {
-        quote: 'Do not try to be original, just try to be good.',
-        author: 'Paul Rand'
+        quote: 'Every moment is a fresh beginning.',
+        author: '- T.S Eloit -'
     },
     {
-        quote: 'Do not be afraid to give up the good to go for the great.',
-        author: 'John D. Rockefeller'
+        quote: `Oh, the things you can find, if you don't stay behind.`,
+        author: '- Dr Seuss -'
     },
     {
-        quote: 'If you cannot fly then run. If you cannot run, then walk. And if you cannot walk, then crawl, but whatever you do, you have to keep moving forward.',
-        author: 'Martin Luther King Jr.'
+        quote: 'All limitations are self-imposed.',
+        author: '- Oliver Wendell Holmes -'
     },
     {
-        quote: 'Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.',
-        author: 'Thomas Edison'
+        quote: 'Problems are not stop signs, they are guidelines.',
+        author: '– Robert H. Schiullern -'
     },
     {
-        quote: 'The fastest way to change yourself is to hang out with people who are already the way you want to be.',
-        author: 'Reid Hoffman'
+        quote: 'Dream as if you’ll live forever, live as if you’ll die today.',
+        author: '- James Dean -'
     },
     {
-        quote: 'Money is like gasoline during a road trip. You do not want to run out of gas on your trip, but you are not doing a tour of gas stations.',
-        author: 'Tim O Reilly'
+        quote: 'Yesterday you said tomorrow. Just do it.',
+        author: '- Nike -'
     },
     {
-        quote: 'Some people dream of success, while other people get up every morning and make it happen.',
-        author: 'Wayne Huizenga'
+        quote: 'Don’t you know your imperfections is a blessing?',
+        author: '– Kendrick Lamar -'
     },
     {
-        quote: 'The only thing worse than starting something and falling.. is not starting something.',
-        author: 'Seth Godin'
+        quote: 'Let the beauty of what you love be what you do.',
+        author: '- Rumi -'
     },
     {
-        quote: 'If you really want to do something, you will find a way. If you do not, you will find an excuse.',
-        author: 'Jim Rohn'
+        quote: 'I have nothing to lose but something to gain.',
+        author: '- Eminem ='
     },
     ];
 

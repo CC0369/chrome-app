@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Momentum App</title>
     <style>
         h2 {
@@ -12,34 +13,90 @@
     </style>
   </head>
   <body>
-    <h2 id="clock" style = "position:relative; left:80px; top:2px; color:white; font-size:60px; font-family: 'Franklin Gothic Medium';">00:00:00</h2>
-    <form id="login-form" style="color:aliceblue; font-family:'Franklin Gothic Medium'; font-size:35px;"> Hello, what is your name?
+    <h2 id="clock" class="clock appear"align="right" style ="position:fixed; top: 10px; right: 70px; color:white; font-size:60px; font-family: 'Franklin Gothic Medium';">
+      00:00:00
+    </h2>
+    <div id="weather" align="right" style="position:fixed; top: 40px; right: 70px; color:rgba(240, 248, 255, 0.726); font-family:'Franklin Gothic Medium'; font-size:18px;">
+      <span></span>
+      <span></span>
+    </div>
+    <form id="login-form" class="login appearBottom" align="center" style="position: relative; top:250px; color:aliceblue; font-family:'Franklin Gothic Medium'; font-size:35px;"> 
+      Hello, what is your name?
         <p></p>
       <input
         required
         maxlength="15"
         type="text"
-        style="color:aliceblue; font-size:28px; font-family:'Franklin Gothic Medium'; background: rgba(201, 225, 228, 0); border: none; border-bottom: 1.5px solid white; outline:none;"
+        style="position:relative; top:2px; color:aliceblue; font-size:28px; font-family:'Franklin Gothic Medium'; background: rgba(201, 225, 228, 0); border: none; border-bottom: 1.5px solid white; outline:none;"
       />
       <input type="submit" class="hidden" value="Log In" />
     </form>
-    <h1 class="hidden" id="greeting" style="color:aliceblue; font-family:'Franklin Gothic Medium'; font-size:35px;"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
+    <h1 class="hidden" id="greeting" align="left" style="position:absolute; left: 15px; top: 5px; color:aliceblue; font-family:'Franklin Gothic Medium'; font-size:35px;"></h1>
+    <form id="todo-form" align="center" style="position:relative; top: 250px; color:aliceblue; font-family:'Franklin Gothic Medium'; font-size:35px;"> 
+      - TO DOs! -
+      <p></p>
+      <div style="position:relative; top:-8px; color:rgba(240, 248, 255, 0.726); font-family:'Franklin Gothic Medium'; font-size:15px;">
+        click ♡ to delete
+      </div>
+      <p></p>
+      <input 
+        type="text" 
+        required 
+        style="position:relative; top:-15px; color:aliceblue; font-size:24px; font-family:'Franklin Gothic Medium'; background: rgba(201, 225, 228, 0); border: none; border-bottom: 1.5px solid white; outline:none;"
+      />
     </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
+    <ul id="todo-list" align="center" style="position: relative; top: 250px;"></ul>
+    <div id="quote" class="quote appear" align="right" style=" width: 300px; position:fixed; top: 130px; right: 70px;  color:rgba(240, 248, 255, 0.726); font-family:'Franklin Gothic Medium'; font-size:14px;">
       <span></span>
-      <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
+      <p></p>
       <span></span>
     </div>
+    <div class="controls" align="left" style="position:absolute; left: 40px; top: 80px;">
+      <div class="controls__colors" id="colors">
+        <div class="controls__color bgColor" style="background-color:#525FA1"></div>
+        <div class="controls__color bgColor"style="background-color:#313961"></div>
+        <div class="controls__color bgColor"style="background-color:#BAC1E6"></div>
+        <div class="controls__color bgColor"style="background-color:#C3C1E6"></div>
+      </div>
+    </div>
+    <div align="left" style="position:absolute; left: 15px; top: 120px; color:rgba(240, 248, 255, 0.658); font-family:'Franklin Gothic Medium'; font-size:14px;">
+      different colour? ⤴
+    </div>
+    <div class="player">
+      <audio class="player__audio viewer">
+        <source src="music/dream.mp3" type="audio/mpeg" data-trackid="1">
+      </audio>
+      <div class="song-panel">
+        <div class="song-info">
+          <div class="song-info__title">Dream (Feat. YOUHA, TRADE L)</div>
+          <div class="song-info__artist">Minit</div>
+        </div>
+      </div>
+      <div class="player-controls">
+        <div class="spinner">
+          <div class="spinner__disc" style="background-image: url(img/dream.jpg);">
+            <div class="center__disc"></div>
+          </div>
+        </div>
+        <button class="backward">
+          <i class="fa fa-backward fa-2x"></i>
+        </button>
+        <button class="play">
+          <i class="fa fa-play fa-3x"></i>
+          <span class="pause left"></span>
+          <spam class="pause right"></spam>
+        </button>
+        <button class="foward">
+          <i class="fa fa-foward fa-2x"></i>
+        </button>
+      </div>
+    </div>
+    
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/music.js"></script>
   </body>
 </html>
