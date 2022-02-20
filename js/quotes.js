@@ -37,7 +37,7 @@ const quotes = [
     },
     {
         quote: 'I have nothing to lose but something to gain.',
-        author: '- Eminem ='
+        author: '- Eminem -'
     },
     ];
 

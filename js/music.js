@@ -4,7 +4,7 @@ const tracks = [
         title : 'Dream (Feat. YOUHA, TRADE L)',
         artist : 'Minit',
         src : 'music/dream.mp3',
-        cover : 'img/dream.png'
+        cover : 'img/dream.jpg'
     },
     {
         id: '2',
@@ -18,7 +18,7 @@ const tracks = [
         title : 'Reflection (Stripped)',
         artist : 'Avokid, Minit',
         src : 'music/reflection.mp3',
-        cover : 'img/reflection.png'
+        cover : 'img/reflection.jpg'
     },
     {
         id: '4',
@@ -37,7 +37,7 @@ const songTitle = player.querySelector('.song-info__title');
 const songArtist = player.querySelector('.song-info__artist');
 const backButton = player.querySelector('.backward');
 const playButton = player.querySelector('.play');
-const fowardButton = player.querySelector('.forward');
+const forwardButton = player.querySelector('.forward');
 const spinner = player.querySelector('.spinner');
 const spinnerDisc = player.querySelector('.spinner__disc');
 const progress = player.querySelector('.progress');
@@ -98,7 +98,7 @@ const handleBackButton = () => {
     }
 };
 
-const handleFowardButton = () => {
+const handleForwardButton = () => {
     const currentTrackId = parseInt(audioSource.dataset.trackid);
     const nextTrackId = currentTrackId === 10 ? '1' : (currentTrackId + 1).toString();
     const nextTrack = tracks.find(o => o.id === nextTrackId);
@@ -127,7 +127,7 @@ const changeTrack = (track) => {
     }
 };
 
-function scrub(e) {
+function scrub(event) {
     const scrubTime = (e.offsetX / progress.offsetWidth) * audio.duration;
     audio.currentTime = scrubTime;
 }
@@ -140,12 +140,12 @@ audio.addEventListener('timeupdate', handleProgress);
 
 backButton.addEventListener('click', handleBackButton);
 playButton.addEventListener('click', togglePlay);
-fowardButton.addEventListener('click', handleFowardButton);
+forwardButton.addEventListener('click', handleForwardButton);
 
 let mousedown = false;
 
 progress.addEventListener('click', scrub);
-progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
+progress.addEventListener('mousemove', (event) => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
 

@@ -13,10 +13,10 @@
     </style>
   </head>
   <body>
-    <h2 id="clock" class="clock appear"align="right" style ="position:fixed; top: 10px; right: 70px; color:white; font-size:60px; font-family: 'Franklin Gothic Medium';">
+    <h2 id="clock" class="clock appear"align="right" style ="position:fixed; top: 5px; right: 30px; color:white; font-size:60px; font-family: 'Franklin Gothic Medium'; text-shadow: 5px 5px 35px rgba(255, 255, 255, 0.644);">
       00:00:00
     </h2>
-    <div id="weather" align="right" style="position:fixed; top: 40px; right: 70px; color:rgba(240, 248, 255, 0.726); font-family:'Franklin Gothic Medium'; font-size:18px;">
+    <div id="weather" align="right" style="position:fixed; top: 40px; right: 30px; color:rgba(240, 248, 255, 0.726); font-family:'Franklin Gothic Medium'; font-size:18px;">
       <span></span>
       <span></span>
     </div>
@@ -31,8 +31,8 @@
       />
       <input type="submit" class="hidden" value="Log In" />
     </form>
-    <h1 class="hidden" id="greeting" align="left" style="position:absolute; left: 15px; top: 5px; color:aliceblue; font-family:'Franklin Gothic Medium'; font-size:35px;"></h1>
-    <form id="todo-form" align="center" style="position:relative; top: 250px; color:aliceblue; font-family:'Franklin Gothic Medium'; font-size:35px;"> 
+    <h1 class="hidden" id="greeting" align="left" style="position:absolute; left: 30px; top: 5px; color:aliceblue; font-family:'Franklin Gothic Medium'; font-size:35px;"></h1>
+    <form id="todo-form" class="hidden" align="center" style="position:relative; top: 250px; color:aliceblue; font-family:'Franklin Gothic Medium'; font-size:35px;"> 
       - TO DOs! -
       <p></p>
       <div style="position:relative; top:-8px; color:rgba(240, 248, 255, 0.726); font-family:'Franklin Gothic Medium'; font-size:15px;">
@@ -46,12 +46,12 @@
       />
     </form>
     <ul id="todo-list" align="center" style="position: relative; top: 250px;"></ul>
-    <div id="quote" class="quote appear" align="right" style=" width: 300px; position:fixed; top: 130px; right: 70px;  color:rgba(240, 248, 255, 0.726); font-family:'Franklin Gothic Medium'; font-size:14px;">
+    <div id="quote" class="quote appear" align="right" style=" width: 300px; position:fixed; top: 120px; right: 30px;  color:rgba(240, 248, 255, 0.726); font-family:'Franklin Gothic Medium'; font-size:14px;">
       <span></span>
       <p></p>
       <span></span>
     </div>
-    <div class="controls" align="left" style="position:absolute; left: 40px; top: 80px;">
+    <div class="background_controls" align="left" style="position:absolute; left: 55px; top: 80px;">
       <div class="controls__colors" id="colors">
         <div class="controls__color bgColor" style="background-color:#525FA1"></div>
         <div class="controls__color bgColor"style="background-color:#313961"></div>
@@ -59,20 +59,23 @@
         <div class="controls__color bgColor"style="background-color:#C3C1E6"></div>
       </div>
     </div>
-    <div align="left" style="position:absolute; left: 15px; top: 120px; color:rgba(240, 248, 255, 0.658); font-family:'Franklin Gothic Medium'; font-size:14px;">
+    <div align="left" style="position:absolute; left: 30px; top: 120px; color:rgba(240, 248, 255, 0.658); font-family:'Franklin Gothic Medium'; font-size:14px;">
       different colour? ⤴
     </div>
     <div class="player">
       <audio class="player__audio viewer">
         <source src="music/dream.mp3" type="audio/mpeg" data-trackid="1">
       </audio>
-      <div class="song-panel">
-        <div class="song-info">
+      <div class="song-panel" align="left" style="position:absolute; left: -45px; top: 185px;">
+        <div class="song-info" align="left" style="position:absolute; left: 65px;">
           <div class="song-info__title">Dream (Feat. YOUHA, TRADE L)</div>
           <div class="song-info__artist">Minit</div>
+          <div class="progress">
+            <div class="progress__filled"></div>
+          </div>
         </div>
       </div>
-      <div class="player-controls">
+      <div class="player-controls" align="left" style="position:absolute; left: 15px; top: 145px;">
         <div class="spinner">
           <div class="spinner__disc" style="background-image: url(img/dream.jpg);">
             <div class="center__disc"></div>
@@ -86,12 +89,12 @@
           <span class="pause left"></span>
           <spam class="pause right"></spam>
         </button>
-        <button class="foward">
-          <i class="fa fa-foward fa-2x"></i>
+        <button class="forward">
+          <i class="fa fa-forward fa-2x"></i>
         </button>
       </div>
     </div>
-    
+
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
